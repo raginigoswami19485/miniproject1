@@ -22,6 +22,7 @@ store.toString()  // it change number into string
 
 }
 
+
 let del=()=>{
 
     let show=document.querySelector("#display")
