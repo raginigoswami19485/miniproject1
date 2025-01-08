@@ -40,14 +40,14 @@ let roll=()=>{
         box3.style.opacity=0;
         box4.style.opacity=1;
         box5.style.opacity=0;
-        box6.style.opacity=0;
+        box6.style.opacity=0:
     }
     else if(dice==5){
         box1.style.opacity=0;
         box2.style.opacity=0;
         box3.style.opacity=0;
         box4.style.opacity=0;
-        box5.style.opacity=5;
+        box5.style.opacity=1;
         box6.style.opacity=0;
     }
     else if(dice==6){

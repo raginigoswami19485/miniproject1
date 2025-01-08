@@ -137,7 +137,7 @@ button{
     height: 300px;
     border-radius:60px ;
 
-    border: 1px solid rgb(211, 116, 116);
+    border: 1px solid black;
     position: absolute;
     top: 20%;
     left: 30%;
@@ -169,5 +169,5 @@ h1{
  border: 5px solid black;
 }
 body{
-    background-color: rgb(107, 51, 28);
+    background-color: wheat;
 }
