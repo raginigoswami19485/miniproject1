@@ -4,4 +4,4 @@ setInterval(() => {
 
     let currenttime=`${time.getHours()}:${time.getMinutes()}:${time.getSeconds()}`
      show.innerHTML=currenttime
-   },1000)
+   },1000)       
