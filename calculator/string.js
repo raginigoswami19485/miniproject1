@@ -39,9 +39,9 @@ let allc=()=>{
     
 }
 
-let squ=()=>{
-    let show=document.querySelector("#display")
-    store=store*store;
-    show.innerHTML=store;
+// let squ=()=>{
+//     let show=document.querySelector("#display")
+//     store=store*store;
+//     show.innerHTML=store;
     
-}
+// }
