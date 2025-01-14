@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        /* Basic styling for the body */
+        body {
+            /* font-family: Arial, sans-serif; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #719eec;
+        }
+
+        /* Container to center content */
+        .container {
+            width: 800px; 
+            height: 400px; ;
+            text-align: center;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 25px;
+            box-shadow: 9px 9px 12px black;
+         
+        }
+
+        /* Heading */
+        h2 {
+            color:hsl(from color h s l);
+            font-size: 55px;
+            font-weight: bold;
+          font-style: italic;
+            margin-top: 0%;
+            color: #333;
+        }
+
+        /* Styling for the input field */
+        #aga {
+            padding: 10px;
+            width: 80%;
+            margin-bottom: 10px;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+            transition: border-color 0.3s ease; /* Smooth transition on hover */
+        }
+
+        /* Hover effect for the input field */
+        #aga:hover {
+            border-color: #699de2; /* Change border color on hover */
+        }
+
+        /* Button styling */
+        button {
+            padding: 10px 20px;
+            background-color: #5c86bd;
+            color: #fff;
+            border: none;
+            box-shadow: 9px 9px 12px black;
+            border-radius: 15px;
+            font-size: 22px;
+            cursor: pointer;
+            font-style: italic;
+            font-weight: bolder;
+            box-shadow: 9 9px 12px rgba(0, 0, 0, 0.1);
+
+            transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+        }
+ 
+       
+        /* Styling for the result text */
+        p {
+            font-size: 55px;
+            font-weight: bold;
+            color: black;
+            margin-top: 20px;
+
+        }
+
+        /* Input container layout */
+        .input-container {
+            margin-bottom: 15px;
+        }
+        #birth{
+            font-size: 36px;
+            font-style: italic;
+            margin-bottom: 25%;
+            font-weight: bolder;
+        }
+       
+
+        
+    </style>
+</head>
+<body>
+    <div  data-aos="flip-left" class="container">
+        <h2>Age Calculator</h2>
+        <div class="input-container">
+            <label id="birth" >Enter Your Birth Year:</label><br><br><br>
+            <input type="text" id="aga"><br><br>
+        </div>
+        <button onclick="agee()">Calculate Age</button><br><br>
+        <p id="show"> </p>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+    <script src="string.js"></script>
+</body>
+</html>
