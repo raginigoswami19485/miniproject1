@@ -4,8 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+       
+        body {          
+              display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+       
+        #alarm {
+            text-align: center;
+           background-color: #cc6c1d5d;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 8px 9px 12px rgba(90, 67, 67, 0.1);
+            width: 450px;
+            height: 250px;
+        }
+
+        #gold1 {
+            color: white;
+            font-size: 55px;
+            margin-bottom: 20px;
+        }
+
+        #inp {
+            padding: 10px;
+            width: 60%;
+            margin-bottom: 20px;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+
+        /* Hover effect for the input field */
+        #inp:hover {
+            border-color: #eb701e; /* Green border on hover */
+        }
+
+        /* Button styling */
+        button {
+            padding: 10px 20px;
+            background-color: rgb(4, 25, 94);
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 22px;
+            cursor: pointer;
+            box-shadow: 8px 9px 12px rgba(133, 60, 60, 0.1);
+
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        /* Hover effect for the button */
+        button:hover {
+            background-color: #cc6c1d;
+            transform: scale(1.05); /* Slightly grow the button on hover */
+        }
+
+        /* Display for showing set time */
+        #shows {
+            font-size: 30px;
+            font-weight: bold;
+            color:red ;
+            margin-top: 20px;
+        }
+
+        /* Audio styling */
+        audio {
+            display: none; /* Hide audio element */
+        }
+    </style>
+    
 </head>
-<body>
+<body id="backg">
     
     <div id="alarm">
 
@@ -13,10 +88,11 @@
         <input type="time"  id="inp">
          <button onclick="rune()">Set Alarm</button> <br>
         <h2 id="shows"></h2>
-      <audio src="song/83-nenjukkule-innarendru-tamil-mobcup-vip-65417 (1).mp3" id="sing"></audio>
-
+      <!-- <audio src="song/83-nenjukkule-innarendru-tamil-mobcup-vip-65417 (1).mp3" id="sing"></audio> -->
+<audio src="oversimplified-alarm-clock-113180.mp3" id="sing"></audio>
      </div>
 
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+     
      <script src="string.js"></script>
-</body>
-</html>
